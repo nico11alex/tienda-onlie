@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/nico11alex/tienda-onlie/internal/Validate"
+	"github.com/nico11alex/tienda-onlie/internal/validation"
 	"github.com/nico11alex/tienda-onlie/internal/domain"
 )
 
@@ -14,7 +14,7 @@ func main() {
 		Password: "bxwnwqwqx",
 	}
 
-	if err := validate.ValidateInfo(user); err != nil {
+	if err := validation.ValidateInfo(user); err != nil {
 		fmt.Println(err)
 		return
 	}
